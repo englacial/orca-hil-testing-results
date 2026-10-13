@@ -1,0 +1,43 @@
+test_id: t08
+status: inconclusive
+fixture_suspect: false
+duration_s: 39.63
+metrics:
+- name: tx_sweep_slope_db_per_db
+  value: 0.9901987850638961
+  units: dB/dB
+  kind: abs
+  bound:
+    type: range
+    lo: 0.95
+    hi: 1.05
+  bound_lo: 0.95
+  bound_hi: 1.05
+  status: pass
+  note: 5 points in fit
+- name: dbfs_at_base_gain
+  value: -51.95297763026211
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 1.0
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+- name: soc_temp_max_c
+  value: 52.9
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

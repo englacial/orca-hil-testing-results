@@ -1,0 +1,120 @@
+test_id: t05
+status: inconclusive
+fixture_suspect: false
+duration_s: 64.71
+metrics:
+- name: plateau_level_dbfs
+  case: default
+  value: -94.14411926269531
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 3.0
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+- name: plateau_onset_n
+  case: default
+  value: 30.0
+  units: pulses
+  kind: base
+  bound:
+    type: factor_two_sided
+    factor: 3
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+- name: dc_chirp_slope_db_per_decade
+  case: dither
+  value: -8.632643685152184
+  units: dB/decade
+  kind: base
+  bound:
+    type: two_sided
+    tol: 1.0
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+- name: dc_chirp_deviation_from_theory_at_nmax_db
+  case: dither
+  value: 4.646087646484375
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+- name: signal_peak_loss_at_nmax_db
+  case: dither
+  value: 0.0004874457383223785
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: slope_db_per_decade
+  case: lo_offset_dither
+  value: -10.02782580612552
+  units: dB/decade
+  kind: abs
+  bound:
+    type: range
+    lo: -11.0
+    hi: -9.0
+  bound_lo: -11.0
+  bound_hi: -9.0
+  status: pass
+- name: deviation_from_theory_at_nmax_db
+  case: lo_offset_dither
+  value: 0.0579376220703125
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 3.0
+  bound_lo: null
+  bound_hi: 3.0
+  status: pass
+- name: signal_peak_loss_at_nmax_db
+  case: lo_offset_dither
+  value: 0.00037538289063832053
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: dither_gain_at_nmax_db
+  value: 19.60236358642578
+  units: dB
+  kind: base
+  bound:
+    type: lower
+    tol: 3.0
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+- name: soc_temp_max_c
+  value: 57.3
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
