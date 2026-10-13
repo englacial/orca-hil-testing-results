@@ -1,0 +1,140 @@
+test_id: t05
+status: pass
+fixture_suspect: false
+duration_s: 64.43
+metrics:
+- name: plateau_level_dbfs
+  case: default
+  value: -94.17973327636719
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 3.0
+  bound_lo: -97.12639007568359
+  bound_hi: -91.12639007568359
+  status: pass
+  baseline:
+    mean: -94.12639007568359
+    std: 0.03337284121271675
+    n: 5
+- name: plateau_onset_n
+  case: default
+  value: 30.0
+  units: pulses
+  kind: base
+  bound:
+    type: factor_two_sided
+    factor: 3
+  bound_lo: 10.0
+  bound_hi: 90.0
+  status: pass
+  baseline:
+    mean: 30.0
+    std: 0.0
+    n: 5
+- name: dc_chirp_slope_db_per_decade
+  case: dither
+  value: -8.500637775270523
+  units: dB/decade
+  kind: base
+  bound:
+    type: two_sided
+    tol: 1.0
+  bound_lo: -9.553069126617064
+  bound_hi: -7.553069126617064
+  status: pass
+  baseline:
+    mean: -8.553069126617064
+    std: 0.10234875623077923
+    n: 5
+- name: dc_chirp_deviation_from_theory_at_nmax_db
+  case: dither
+  value: 5.257499694824219
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: 7.042706298828125
+  status: pass
+  baseline:
+    mean: 5.042706298828125
+    std: 0.3693693022334024
+    n: 5
+- name: signal_peak_loss_at_nmax_db
+  case: dither
+  value: 0.0005739525918357913
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: slope_db_per_decade
+  case: lo_offset_dither
+  value: -9.91057608544731
+  units: dB/decade
+  kind: abs
+  bound:
+    type: range
+    lo: -11.0
+    hi: -9.0
+  bound_lo: -11.0
+  bound_hi: -9.0
+  status: pass
+- name: deviation_from_theory_at_nmax_db
+  case: lo_offset_dither
+  value: 0.3765106201171875
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 3.0
+  bound_lo: null
+  bound_hi: 3.0
+  status: pass
+- name: signal_peak_loss_at_nmax_db
+  case: lo_offset_dither
+  value: 0.0005150832091445068
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: dither_gain_at_nmax_db
+  value: 19.02978515625
+  units: dB
+  kind: base
+  bound:
+    type: lower
+    tol: 3.0
+  bound_lo: 16.264201354980468
+  bound_hi: null
+  status: pass
+  baseline:
+    mean: 19.264201354980468
+    std: 0.39912014297238396
+    n: 5
+- name: soc_temp_max_c
+  value: 57.85
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
