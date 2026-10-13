@@ -1,0 +1,79 @@
+test_id: t06
+status: pass
+fixture_suspect: false
+duration_s: 1613.51
+metrics:
+- name: errors_in_captures
+  value: 13428
+  units: count
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: burst 88/40088, long 13340/6013340
+- name: power_loss_db
+  case: 1s
+  value: 0.0002707353630326898
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: power_loss_db
+  case: 10s
+  value: 0.00027089787175163375
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: power_loss_db
+  case: 100s
+  value: 0.0002732559407606577
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: spread_1sigma_db
+  case: 100s
+  value: 3.3274389721208377e-06
+  units: dB
+  kind: base
+  bound:
+    type: ratio_upper
+    factor: 1.5
+  bound_lo: null
+  bound_hi: 5.139455181669363e-06
+  status: pass
+  baseline:
+    mean: 3.426303454446242e-06
+    std: 1.6331346664584282e-06
+    n: 3
+  note: 15 windows
+- name: soc_temp_max_c
+  value: 61.15
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

@@ -1,0 +1,175 @@
+test_id: t00
+status: pass
+fixture_suspect: false
+duration_s: 325.55
+metrics:
+- name: radar_links_custom_uhd
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: single_uhd_installed
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: uhd_stamp_matches_expected_and_head
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: uhd_version_matches_stamp
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: uhd_images_present
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: sdr_serial_match
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: antennas_present
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: usb_link_mbps
+  value: 5000
+  units: Mb/s
+  kind: abs
+  bound:
+    type: equals
+    value: 5000
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: throttled_flags
+  value: 0
+  units: bits
+  kind: abs
+  bound:
+    type: equals
+    value: 0
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: throttled_since_boot_flags
+  value: 0
+  units: bits
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: free_disk_gb
+  value: 989.842223104
+  units: GB
+  kind: abs
+  bound:
+    type: min
+    value: 15
+  bound_lo: 15.0
+  bound_hi: null
+  status: pass
+- name: usb_kernel_errors_1h
+  value: 0
+  units: count
+  kind: abs
+  bound:
+    type: equals
+    value: 0
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: cxx_hardware_tests_passed
+  value: true
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: attenuator_check_peak_dbfs
+  value: -71.99176835259362
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 6.0
+  bound_lo: -78.57347014410358
+  bound_hi: -66.57347014410358
+  status: pass
+  baseline:
+    mean: -72.57347014410358
+    std: 0.37419858188818306
+    n: 3
+- name: soc_temp_after_warmup_c
+  value: 47.4
+  units: degC
+  kind: base
+  bound:
+    type: upper
+    tol: 10.0
+  bound_lo: null
+  bound_hi: 58.5
+  status: pass
+  baseline:
+    mean: 48.5
+    std: 0.5499999999999972
+    n: 3
+- name: soc_temp_max_c
+  value: 51.25
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

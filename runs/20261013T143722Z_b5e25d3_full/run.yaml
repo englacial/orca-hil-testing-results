@@ -1,0 +1,31 @@
+run_id: 20261013T143722Z_b5e25d3_full
+tier: full
+fixture_id: b206mini_pi5_loopback_50m
+started_utc: '2026-10-13T14:37:22Z'
+ended_utc: '2026-10-13T16:26:03Z'
+git_sha: b5e25d38ab2c42a0400b2ef7547d29ff7eabe7b7
+git_branch: hil-phase4
+dirty: false
+pytest_args:
+- tests/hil
+- --ignore=tests/hil/unit
+- --hil
+- --tier
+- full
+status: fail
+fixture_suspect: false
+tests:
+  t00: pass
+  t01: pass
+  t02: pass
+  t03: pass
+  t04: pass
+  t05: pass
+  t06: pass
+  t07: fail
+  t08: pass
+  t09: pass
+  t10: pass
+  t11: pass
+  t12: pass
+session_metrics: []
