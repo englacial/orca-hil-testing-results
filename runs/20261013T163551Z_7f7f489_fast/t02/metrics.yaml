@@ -1,0 +1,143 @@
+test_id: t02
+status: pass
+fixture_suspect: false
+duration_s: 22.33
+metrics:
+- name: pslr_minus_ideal_db
+  case: rectangular
+  value: 0.12339094979293286
+  units: dB
+  kind: abs
+  bound:
+    type: range
+    lo: -4.0
+    hi: 4.0
+  bound_lo: -4.0
+  bound_hi: 4.0
+  status: pass
+- name: islr_minus_ideal_db
+  case: rectangular
+  value: 0.1303494181192555
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 1.5
+  bound_lo: null
+  bound_hi: 1.6714397757979147
+  status: pass
+  baseline:
+    mean: 0.1714397757979146
+    std: 0.049271023613172774
+    n: 5
+- name: mainlobe_width_ratio
+  case: rectangular
+  value: 1.0538913931423035
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: rectangular
+  value: 0.0
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 569.6, ideal 569.6 samples
+- name: first_echo_db
+  case: rectangular
+  value: -25.372788519890385
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: pslr_minus_ideal_db
+  case: hamming
+  value: 3.6226189359391583
+  units: dB
+  kind: abs
+  bound:
+    type: range
+    lo: -4.0
+    hi: 4.0
+  bound_lo: -4.0
+  bound_hi: 4.0
+  status: pass
+- name: islr_minus_ideal_db
+  case: hamming
+  value: 4.778373852142771
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 1.5
+  bound_lo: null
+  bound_hi: 6.270249611736216
+  status: pass
+  baseline:
+    mean: 4.770249611736216
+    std: 0.24692566763234364
+    n: 5
+- name: mainlobe_width_ratio
+  case: hamming
+  value: 1.0075042868485877
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: hamming
+  value: 4.5
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 14.6, ideal 10.1 samples
+- name: first_echo_db
+  case: hamming
+  value: -50.39655253531847
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: soc_temp_max_c
+  value: 49.05
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
