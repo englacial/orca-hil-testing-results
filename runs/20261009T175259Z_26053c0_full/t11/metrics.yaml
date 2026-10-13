@@ -1,0 +1,73 @@
+test_id: t11
+status: pass
+fixture_suspect: false
+duration_s: 63.18
+metrics:
+- name: peak_power_diff_db
+  value: 0.09852975437888034
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 1.0
+  bound_lo: null
+  bound_hi: 1.0
+  status: pass
+  note: loopback peak-to-noise ratio, offline stack vs on-device
+- name: noise_power_diff_db
+  value: 0.19381274468921106
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 1.0
+  bound_lo: null
+  bound_hi: 1.0
+  status: pass
+- name: p100_noise_vs_p1_single_db
+  value: -20.183461186354975
+  units: dB
+  kind: abs
+  bound:
+    type: range
+    lo: -21.0
+    hi: -19.0
+  bound_lo: -21.0
+  bound_hi: -19.0
+  status: pass
+  note: theory -20.0 dB for 100 presums
+- name: profile_magnitude_correlation
+  value: 0.9999995166293928
+  units: ''
+  kind: abs
+  bound:
+    type: min
+    value: 0.999
+  bound_lo: 0.999
+  bound_hi: null
+  status: pass
+- name: capture_gain_diff_db
+  value: -0.09559089695412126
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: loopback peak power, p100 capture minus p1 capture
+- name: soc_temp_max_c
+  value: 60.6
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
