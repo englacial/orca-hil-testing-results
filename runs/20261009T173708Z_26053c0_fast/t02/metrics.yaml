@@ -1,0 +1,135 @@
+test_id: t02
+status: inconclusive
+fixture_suspect: false
+duration_s: 22.4
+metrics:
+- name: pslr_minus_ideal_db
+  case: rectangular
+  value: 0.23451760071872307
+  units: dB
+  kind: abs
+  bound:
+    type: range
+    lo: -3.0
+    hi: 3.0
+  bound_lo: -3.0
+  bound_hi: 3.0
+  status: pass
+- name: islr_minus_ideal_db
+  case: rectangular
+  value: 0.21193569962266245
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 1.5
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+- name: mainlobe_width_ratio
+  case: rectangular
+  value: 1.054336084079795
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: rectangular
+  value: 0.0
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 569.6, ideal 569.6 samples
+- name: first_echo_db
+  case: rectangular
+  value: -25.413459505351806
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: pslr_minus_ideal_db
+  case: hamming
+  value: 1.5875091579496328
+  units: dB
+  kind: abs
+  bound:
+    type: range
+    lo: -3.0
+    hi: 3.0
+  bound_lo: -3.0
+  bound_hi: 3.0
+  status: pass
+- name: islr_minus_ideal_db
+  case: hamming
+  value: 5.039578572685713
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 1.5
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+- name: mainlobe_width_ratio
+  case: hamming
+  value: 1.007152197666898
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: hamming
+  value: 5.5
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 15.6, ideal 10.1 samples
+- name: first_echo_db
+  case: hamming
+  value: -49.793187156453754
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: soc_temp_max_c
+  value: 48.5
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
