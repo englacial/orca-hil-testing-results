@@ -1,0 +1,77 @@
+test_id: t08
+status: inconclusive
+fixture_suspect: false
+duration_s: 254.3
+metrics:
+- name: tx_sweep_slope_db_per_db
+  value: 1.010821881005615
+  units: dB/dB
+  kind: abs
+  bound:
+    type: range
+    lo: 0.95
+    hi: 1.05
+  bound_lo: 0.95
+  bound_hi: 1.05
+  status: pass
+  note: 19 points in fit
+- name: dbfs_at_base_gain
+  value: -51.93464253869534
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 1.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: p1db_tx_gain
+  value: .nan
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+  note: no compression within the sweep
+- name: dynamic_range_db
+  value: 65.68576778656357
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+  note: 'max level used: no compression'
+- name: rx_sweep_slope_db_per_db
+  value: 0.9777006054984339
+  units: dB/dB
+  kind: abs
+  bound:
+    type: range
+    lo: 0.95
+    hi: 1.05
+  bound_lo: 0.95
+  bound_hi: 1.05
+  status: pass
+  note: 7 points in fit
+- name: soc_temp_max_c
+  value: 57.3
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

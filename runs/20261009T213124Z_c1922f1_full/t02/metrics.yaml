@@ -1,0 +1,367 @@
+test_id: t02
+status: pass
+fixture_suspect: false
+duration_s: 69.55
+metrics:
+- name: pslr_minus_ideal_db
+  case: rectangular
+  value: 0.2569391577411366
+  units: dB
+  kind: abs
+  bound:
+    type: range
+    lo: -3.0
+    hi: 3.0
+  bound_lo: -3.0
+  bound_hi: 3.0
+  status: pass
+- name: islr_minus_ideal_db
+  case: rectangular
+  value: 0.3575819579742774
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 1.5
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: mainlobe_width_ratio
+  case: rectangular
+  value: 1.0600955518232467
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: rectangular
+  value: 0.0
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 569.6, ideal 569.6 samples
+- name: first_echo_db
+  case: rectangular
+  value: -25.094377053476904
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: pslr_minus_ideal_db
+  case: hamming
+  value: 1.2859776689047706
+  units: dB
+  kind: abs
+  bound:
+    type: range
+    lo: -3.0
+    hi: 3.0
+  bound_lo: -3.0
+  bound_hi: 3.0
+  status: pass
+- name: islr_minus_ideal_db
+  case: hamming
+  value: 3.829833239268183
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 1.5
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: mainlobe_width_ratio
+  case: hamming
+  value: 1.006854379063382
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: hamming
+  value: 5.125
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 15.1, ideal 10.0 samples
+- name: first_echo_db
+  case: hamming
+  value: -49.740952261452264
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: floor_limited_pslr_db
+  case: blackman
+  value: -57.421684274120494
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: ideal -96 dB is below the system sidelobe floor
+- name: floor_limited_islr_db
+  case: blackman
+  value: -44.44458310565256
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: ideal -96 dB is below the system sidelobe floor
+- name: mainlobe_width_ratio
+  case: blackman
+  value: 1.0039233681587996
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: blackman
+  value: 1.375
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 13.0, ideal 11.6 samples
+- name: first_echo_db
+  case: blackman
+  value: -51.54743730212168
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: floor_limited_pslr_db
+  case: kaiser10
+  value: -57.19450585306278
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: ideal -108 dB is below the system sidelobe floor
+- name: floor_limited_islr_db
+  case: kaiser10
+  value: -44.07857516310006
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: ideal -108 dB is below the system sidelobe floor
+- name: mainlobe_width_ratio
+  case: kaiser10
+  value: 1.0036655877279235
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: kaiser10
+  value: 2.125
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 14.8, ideal 12.6 samples
+- name: first_echo_db
+  case: kaiser10
+  value: -50.54252405797107
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: floor_limited_pslr_db
+  case: kaiser14
+  value: -57.128124627855506
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: ideal -141 dB is below the system sidelobe floor
+- name: floor_limited_islr_db
+  case: kaiser14
+  value: -45.74375086479197
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: ideal -141 dB is below the system sidelobe floor
+- name: mainlobe_width_ratio
+  case: kaiser14
+  value: 1.0043857865202275
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: kaiser14
+  value: 1.875
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 16.8, ideal 14.9 samples
+- name: first_echo_db
+  case: kaiser14
+  value: -46.29672601315714
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: floor_limited_pslr_db
+  case: kaiser18
+  value: -55.415257520850425
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: ideal -174 dB is below the system sidelobe floor
+- name: floor_limited_islr_db
+  case: kaiser18
+  value: -44.026212465556014
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: ideal -174 dB is below the system sidelobe floor
+- name: mainlobe_width_ratio
+  case: kaiser18
+  value: 1.0037659885513195
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: kaiser18
+  value: 1.25
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 18.2, ideal 17.0 samples
+- name: first_echo_db
+  case: kaiser18
+  value: -46.46780499235082
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: soc_temp_max_c
+  value: 50.15
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
