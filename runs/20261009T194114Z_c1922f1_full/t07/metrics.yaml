@@ -1,0 +1,74 @@
+test_id: t07
+status: pass
+fixture_suspect: false
+duration_s: 51.49
+metrics:
+- name: errors_in_captures
+  value: 7987
+  units: count
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: long 7906/6007906, burst 81/40081
+- name: phase_drift_mdeg_per_s
+  value: -0.28539941258121565
+  units: mdeg/s
+  kind: abs
+  bound:
+    type: abs_max
+    value: 0.5
+  bound_lo: -0.5
+  bound_hi: 0.5
+  status: pass
+  note: over 1506 s
+- name: phase_var_to_theory_ratio
+  value: 1.044330441734393
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.7
+    hi: 1.5
+  bound_lo: 0.7
+  bound_hi: 1.5
+  status: pass
+  note: Var(phi) 0.00121 rad^2, 1/(2 SNR) 0.00116, SNR 26.3 dB
+- name: phase_steps_count
+  value: 0
+  units: count
+  kind: abs
+  bound:
+    type: equals
+    value: 0
+  bound_lo: null
+  bound_hi: null
+  status: pass
+  note: first differences > 5 x 0.447 deg
+- name: residual_std_deg
+  value: 0.3412967327422629
+  units: deg
+  kind: base
+  bound:
+    type: ratio_upper
+    factor: 1.5
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: soc_temp_max_c
+  value: 62.25
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

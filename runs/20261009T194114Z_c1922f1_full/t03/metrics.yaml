@@ -1,0 +1,106 @@
+test_id: t03
+status: inconclusive
+fixture_suspect: false
+duration_s: 110.83
+metrics:
+- name: noise_power_dbfs
+  value: -54.67315027626854
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 1.5
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: kurtosis_i
+  value: 3.0502130549018664
+  units: ''
+  kind: abs
+  bound:
+    type: range
+    lo: 2.8
+    hi: 3.2
+  bound_lo: 2.8
+  bound_hi: 3.2
+  status: pass
+- name: kurtosis_q
+  value: 3.0502268559642594
+  units: ''
+  kind: abs
+  bound:
+    type: range
+    lo: 2.8
+    hi: 3.2
+  bound_lo: 2.8
+  bound_hi: 3.2
+  status: pass
+- name: impulse_fraction_6sigma
+  value: 5e-08
+  units: fraction
+  kind: base
+  bound:
+    type: ratio_upper
+    factor: 3
+    floor: 1e-06
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: new_narrowband_lines
+  value: 1
+  units: count
+  kind: abs
+  bound:
+    type: equals
+    value: 0
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+  note: no baseline line list
+- name: narrowband_max_line_db
+  value: 10.269103050231934
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 6.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: tx_isolation_margin_db
+  value: .nan
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 3.0
+  bound_lo: null
+  bound_hi: null
+  status: inconclusive
+  note: no loopback index from the T1 baseline
+- name: noise_at_nmax_dbfs
+  value: -128.89034853993368
+  units: dBFS
+  kind: base
+  bound:
+    type: upper
+    tol: 3.0
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: soc_temp_max_c
+  value: 58.4
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

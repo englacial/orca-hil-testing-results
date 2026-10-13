@@ -1,0 +1,398 @@
+test_id: t09
+status: fail
+fixture_suspect: false
+duration_s: 1968.81
+metrics:
+- name: error_rate
+  case: duty_20
+  value: 0.0011466836072189126
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 574 errors (0 not late-command) in 500574 pulses
+- name: records_written_equals_requested
+  case: duty_20
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_25
+  value: 0.0011067736947462212
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 554 errors (0 not late-command) in 500554 pulses
+- name: records_written_equals_requested
+  case: duty_25
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_30
+  value: 0.0024479926260955616
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 1227 errors (0 not late-command) in 501227 pulses
+- name: records_written_equals_requested
+  case: duty_30
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_35
+  value: 0.002360415257500753
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 1183 errors (0 not late-command) in 501183 pulses
+- name: records_written_equals_requested
+  case: duty_35
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_40
+  value: 0.001689141971783742
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 846 errors (0 not late-command) in 500846 pulses
+- name: records_written_equals_requested
+  case: duty_40
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_45
+  value: 0.004275640400121876
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 2147 errors (0 not late-command) in 502147 pulses
+- name: records_written_equals_requested
+  case: duty_45
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_50
+  value: 0.004959282933857653
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 2492 errors (0 not late-command) in 502492 pulses
+- name: records_written_equals_requested
+  case: duty_50
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_55
+  value: 0.007227384639822095
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 3640 errors (0 not late-command) in 503640 pulses
+- name: records_written_equals_requested
+  case: duty_55
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_60
+  value: 0.008137209782108454
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 4102 errors (2 not late-command) in 504104 pulses
+- name: records_written_equals_requested
+  case: duty_60
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_65
+  value: 0.006175624668311115
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 3107 errors (0 not late-command) in 503107 pulses
+- name: records_written_equals_requested
+  case: duty_65
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_70
+  value: 0.00415268331059482
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 2085 errors (0 not late-command) in 502085 pulses
+- name: records_written_equals_requested
+  case: duty_70
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_75
+  value: 0.005669671532919294
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 2851 errors (0 not late-command) in 502851 pulses
+- name: records_written_equals_requested
+  case: duty_75
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_80
+  value: 0.008905970945087445
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 4493 errors (0 not late-command) in 504493 pulses
+- name: records_written_equals_requested
+  case: duty_80
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_85
+  value: 0.026597256561707895
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 13662 errors (0 not late-command) in 513662 pulses
+- name: records_written_equals_requested
+  case: duty_85
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_90
+  value: 0.06064830296722414
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 32282 errors (0 not late-command) in 532282 pulses
+- name: records_written_equals_requested
+  case: duty_90
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_95
+  value: .nan
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 67216 errors (0 not late-command) in nan pulses
+- name: records_written_equals_requested
+  case: duty_95
+  value: false
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: fail
+- name: process_killed
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: false
+  bound_lo: null
+  bound_hi: null
+  status: fail
+- name: error_rate_at_50pct
+  value: 0.004959282933857653
+  units: fraction
+  kind: abs
+  bound:
+    type: max
+    value: 0.02
+  bound_lo: null
+  bound_hi: 0.02
+  status: pass
+  note: measured at duty 0.500
+- name: max_duty_with_error_rate_below_2pct
+  value: 0.8
+  units: fraction
+  kind: base
+  bound:
+    type: lower
+    tol: 0.1
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_sweep
+  value: false
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: false
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: soc_temp_max_c
+  value: 53.45
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
