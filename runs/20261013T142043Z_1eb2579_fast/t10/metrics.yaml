@@ -1,0 +1,104 @@
+test_id: t10
+status: pass
+fixture_suspect: false
+duration_s: 31.61
+metrics:
+- name: probe_duty
+  value: 0.85
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: error rate 0.0454
+- name: error_rate
+  value: 0.04729240501505278
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 2482 errors in 52482 pulses
+- name: records_times_presums_equals_requested
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_file_type_is_not_included
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: time_offset_increases_logged
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: max_gap_phase_jump_sigma
+  value: 3.599596620360576
+  units: sigma
+  kind: abs
+  bound:
+    type: max
+    value: 4.8842141649171795
+  bound_lo: null
+  bound_hi: 4.8842141649171795
+  status: pass
+  note: 963 gaps evaluated; limit 4.88 sigma
+- name: record_power_drop_after_first_error_db
+  value: 0.02741649275316238
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.5
+  bound_lo: null
+  bound_hi: 0.5
+  status: pass
+  note: gaps at records 1185 (first with clean records before) and 4982 (last with clean records after); 52 records 
+    before
+- name: stacked_power_change_after_errors_db
+  value: 0.03340559434085514
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+  note: gaps at records 1185 (first with clean records before) and 4982 (last with clean records after); 52 records 
+    before
+- name: soc_temp_max_c
+  value: 56.75
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

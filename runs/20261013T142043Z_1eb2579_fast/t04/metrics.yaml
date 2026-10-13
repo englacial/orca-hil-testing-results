@@ -1,0 +1,116 @@
+test_id: t04
+status: fail
+fixture_suspect: false
+duration_s: 34.54
+metrics:
+- name: lo_leakage_rel_chirp_db
+  case: a
+  value: -50.83084853966774
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: spur_freqs_match
+  case: a
+  value: false
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: fail
+  note: 1 baseline spurs not found
+- name: new_spurs_above_baseline
+  case: a
+  value: 1
+  units: count
+  kind: abs
+  bound:
+    type: equals
+    value: 0
+  bound_lo: null
+  bound_hi: null
+  status: fail
+  note: 1 new, 0 raised by more than 6 dB
+- name: post_chirp_dc_rel_chirp_db
+  case: a
+  value: -47.534907128648776
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: post_chirp_dc_rel_chirp_db
+  case: b
+  value: -44.710505230010355
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: post_chirp_dc_rel_chirp_db
+  case: c
+  value: -61.50835172963278
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: lo_leakage_suppression_by_dither_db
+  value: 3.3387405584726935
+  units: dB
+  kind: abs
+  bound:
+    type: min
+    value: 20.0
+  bound_lo: 20.0
+  bound_hi: null
+  status: inconclusive
+  note: "lower bound: dithered case at the estimate's noise floor (-60.2 dB rel. chirp)"
+- name: occupied_bw_ratio
+  case: c
+  value: 0.9937434827945777
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.95
+    hi: 1.05
+  bound_lo: 0.95
+  bound_hi: 1.05
+  status: pass
+  note: ratio to the ideal received chirps' -10 dB bandwidth
+- name: center_offset_error_mhz
+  case: c
+  value: 0.041015625
+  units: MHz
+  kind: abs
+  bound:
+    type: max
+    value: 0.5
+  bound_lo: null
+  bound_hi: 0.5
+  status: pass
+- name: soc_temp_max_c
+  value: 49.6
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

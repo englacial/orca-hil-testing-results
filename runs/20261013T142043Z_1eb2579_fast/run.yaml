@@ -1,0 +1,36 @@
+run_id: 20261013T142043Z_1eb2579_fast
+tier: fast
+fixture_id: b206mini_pi5_loopback_50m
+started_utc: '2026-10-13T14:20:43Z'
+ended_utc: '2026-10-13T14:28:43Z'
+git_sha: 1eb25792c416d76fcf68234c2bbf6bbe2b568f88
+git_branch: hil-phase4
+dirty: false
+pytest_args:
+- tests/hil
+- --ignore=tests/hil/unit
+- --hil
+- --tier
+- fast
+status: fail
+fixture_suspect: false
+tests:
+  t00: pass
+  t01: pass
+  t02: pass
+  t03: pass
+  t04: fail
+  t05: pass
+  t08: pass
+  t09: pass
+  t10: pass
+  t11: pass
+session_metrics:
+- name: fast_tier_duration_s
+  value: 480.2
+  units: s
+  kind: abs
+  bound:
+    type: max
+    value: 600
+  status: pass
