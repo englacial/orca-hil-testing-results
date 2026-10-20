@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  ORCA_REF: main   # branch of englacial/orca that provides the site generator
+  ORCA_REF: hil-phase4   # branch of englacial/orca that provides the site generator
 
 jobs:
   build:
