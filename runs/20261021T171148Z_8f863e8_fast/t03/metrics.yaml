@@ -1,0 +1,120 @@
+test_id: t03
+status: pass
+fixture_suspect: false
+duration_s: 17.49
+metrics:
+- name: noise_power_dbfs
+  value: -54.67805324740919
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 1.5
+  bound_lo: -56.15213671245588
+  bound_hi: -53.15213671245588
+  status: pass
+  baseline:
+    mean: -54.65213671245588
+    std: 0.012600713462100841
+    n: 5
+- name: kurtosis_i
+  value: 3.0480231426288804
+  units: ''
+  kind: abs
+  bound:
+    type: range
+    lo: 2.8
+    hi: 3.2
+  bound_lo: 2.8
+  bound_hi: 3.2
+  status: pass
+- name: kurtosis_q
+  value: 3.050423946518853
+  units: ''
+  kind: abs
+  bound:
+    type: range
+    lo: 2.8
+    hi: 3.2
+  bound_lo: 2.8
+  bound_hi: 3.2
+  status: pass
+- name: impulse_fraction_6sigma
+  value: 0.0
+  units: fraction
+  kind: base
+  bound:
+    type: ratio_upper
+    factor: 3
+    floor: 1e-06
+  bound_lo: null
+  bound_hi: 1e-06
+  status: pass
+  baseline:
+    mean: 0.0
+    std: 0.0
+    n: 5
+- name: new_narrowband_lines
+  value: 0
+  units: count
+  kind: abs
+  bound:
+    type: equals
+    value: 0
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: narrowband_max_line_db
+  value: 10.24636173248291
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 6.0
+  bound_lo: null
+  bound_hi: 16.319331169128418
+  status: pass
+  baseline:
+    mean: 10.319331169128418
+    std: 0.026454276401473898
+    n: 5
+- name: tx_isolation_margin_db
+  value: 2.703750675191021
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 8.4
+  bound_lo: null
+  bound_hi: 8.4
+  status: pass
+- name: noise_at_nmax_dbfs
+  value: -118.70634541295784
+  units: dBFS
+  kind: base
+  bound:
+    type: upper
+    tol: 3.0
+  bound_lo: null
+  bound_hi: -115.75397485432578
+  status: pass
+  baseline:
+    mean: -118.75397485432578
+    std: 0.42433934486274044
+    n: 5
+- name: soc_temp_max_c
+  value: 52.9
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

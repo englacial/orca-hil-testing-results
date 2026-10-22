@@ -1,0 +1,104 @@
+test_id: t10
+status: pass
+fixture_suspect: false
+duration_s: 30.33
+metrics:
+- name: probe_duty
+  value: 0.85
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: error rate 0.0293
+- name: error_rate
+  value: 0.029879705083430345
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 1540 errors in 51540 pulses
+- name: records_times_presums_equals_requested
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_file_type_is_not_included
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: time_offset_increases_logged
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: max_gap_phase_jump_sigma
+  value: 4.737113313472646
+  units: sigma
+  kind: abs
+  bound:
+    type: max
+    value: 4.798962521025262
+  bound_lo: null
+  bound_hi: 4.798962521025262
+  status: pass
+  note: 627 gaps evaluated; limit 4.80 sigma
+- name: record_power_drop_after_first_error_db
+  value: -0.010333431130491424
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.5
+  bound_lo: null
+  bound_hi: 0.5
+  status: pass
+  note: gaps at records 1371 (first with clean records before) and 4975 (last with clean records after); 99 records 
+    before
+- name: stacked_power_change_after_errors_db
+  value: 0.006810469065233193
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+  note: gaps at records 1371 (first with clean records before) and 4975 (last with clean records after); 99 records 
+    before
+- name: soc_temp_max_c
+  value: 55.65
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
