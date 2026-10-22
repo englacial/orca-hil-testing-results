@@ -1,0 +1,407 @@
+test_id: t02
+status: pass
+fixture_suspect: false
+duration_s: 68.16
+metrics:
+- name: pslr_minus_ideal_db
+  case: rectangular
+  value: 0.21929210278682554
+  units: dB
+  kind: abs
+  bound:
+    type: range
+    lo: -4.0
+    hi: 4.0
+  bound_lo: -4.0
+  bound_hi: 4.0
+  status: pass
+- name: islr_minus_ideal_db
+  case: rectangular
+  value: 0.21755550550622793
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 1.5
+  bound_lo: null
+  bound_hi: 1.7326690052434894
+  status: pass
+  baseline:
+    mean: 0.23266900524348935
+    std: 0.1167516963160566
+    n: 3
+- name: mainlobe_width_ratio
+  case: rectangular
+  value: 1.054575263336272
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: rectangular
+  value: 0.0
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 569.6, ideal 569.6 samples
+- name: first_echo_db
+  case: rectangular
+  value: -25.53351675432989
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: pslr_minus_ideal_db
+  case: hamming
+  value: 2.880082438111728
+  units: dB
+  kind: abs
+  bound:
+    type: range
+    lo: -4.0
+    hi: 4.0
+  bound_lo: -4.0
+  bound_hi: 4.0
+  status: pass
+- name: islr_minus_ideal_db
+  case: hamming
+  value: 5.121595932231209
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 1.5
+  bound_lo: null
+  bound_hi: 5.738346170138662
+  status: pass
+  baseline:
+    mean: 4.238346170138662
+    std: 0.3547506853399629
+    n: 3
+- name: mainlobe_width_ratio
+  case: hamming
+  value: 1.0068750015889951
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: hamming
+  value: 5.125
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 15.4, ideal 10.2 samples
+- name: first_echo_db
+  case: hamming
+  value: -50.53689965812458
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: floor_limited_pslr_db
+  case: blackman
+  value: -56.26430125122546
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: -67.2374629172588
+  bound_hi: -40.891194222829505
+  status: pass
+  baseline:
+    mean: -54.06432857004415
+    std: 3.2932835868036605
+    n: 3
+  note: ideal -96 dB is below the system sidelobe floor
+- name: floor_limited_islr_db
+  case: blackman
+  value: -44.650836416958484
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: -41.426743628428916
+  status: pass
+  baseline:
+    mean: -44.475649094643025
+    std: 0.7622263665535264
+    n: 3
+  note: ideal -96 dB is below the system sidelobe floor
+- name: mainlobe_width_ratio
+  case: blackman
+  value: 1.0037289989057232
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: blackman
+  value: 2.75
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 14.5, ideal 11.8 samples
+- name: first_echo_db
+  case: blackman
+  value: -50.01316061074063
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: floor_limited_pslr_db
+  case: kaiser10
+  value: -58.993846739519014
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: -60.31805414045398
+  bound_hi: -53.23435597628486
+  status: pass
+  baseline:
+    mean: -56.77620505836942
+    std: 0.8854622705211408
+    n: 3
+  note: ideal -108 dB is below the system sidelobe floor
+- name: floor_limited_islr_db
+  case: kaiser10
+  value: -46.171648374566026
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: -42.56629709386502
+  status: pass
+  baseline:
+    mean: -44.56629709386502
+    std: 0.43580968652882085
+    n: 3
+  note: ideal -108 dB is below the system sidelobe floor
+- name: mainlobe_width_ratio
+  case: kaiser10
+  value: 1.0035081802522878
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: kaiser10
+  value: 6.5
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 19.4, ideal 12.9 samples
+- name: first_echo_db
+  case: kaiser10
+  value: -48.39411992248726
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: floor_limited_pslr_db
+  case: kaiser14
+  value: -55.56127411157223
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: -60.632102166734846
+  bound_hi: -52.175942001926465
+  status: pass
+  baseline:
+    mean: -56.404022084330656
+    std: 1.057020020601047
+    n: 3
+  note: ideal -141 dB is below the system sidelobe floor
+- name: floor_limited_islr_db
+  case: kaiser14
+  value: -45.093536657634495
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: -43.19094171422373
+  status: pass
+  baseline:
+    mean: -45.19094171422373
+    std: 0.4833502221276917
+    n: 3
+  note: ideal -141 dB is below the system sidelobe floor
+- name: mainlobe_width_ratio
+  case: kaiser14
+  value: 1.0040272486053172
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: kaiser14
+  value: 1.0
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 15.9, ideal 14.9 samples
+- name: first_echo_db
+  case: kaiser14
+  value: -48.71008776903687
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: floor_limited_pslr_db
+  case: kaiser18
+  value: -55.3659041820914
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: -59.86330215174384
+  bound_hi: -51.64544205294732
+  status: pass
+  baseline:
+    mean: -55.75437210234558
+    std: 1.0272325123495654
+    n: 3
+  note: ideal -174 dB is below the system sidelobe floor
+- name: floor_limited_islr_db
+  case: kaiser18
+  value: -45.093980991506356
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: -40.45318357489753
+  status: pass
+  baseline:
+    mean: -44.88355931586659
+    std: 1.1075939352422661
+    n: 3
+  note: ideal -174 dB is below the system sidelobe floor
+- name: mainlobe_width_ratio
+  case: kaiser18
+  value: 1.0015100449092573
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.9
+    hi: 1.1
+  bound_lo: 0.9
+  bound_hi: 1.1
+  status: pass
+- name: sidelobe_extent_minus_ideal_samples
+  case: kaiser18
+  value: 1.25
+  units: samples
+  kind: abs
+  bound:
+    type: max
+    value: 10
+  bound_lo: null
+  bound_hi: 10.0
+  status: pass
+  note: measured 18.5, ideal 17.2 samples
+- name: first_echo_db
+  case: kaiser18
+  value: -47.92503255028329
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: level one cable round trip after the loopback peak, rel. peak
+- name: soc_temp_max_c
+  value: 49.6
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

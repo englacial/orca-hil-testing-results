@@ -1,0 +1,87 @@
+test_id: t08
+status: pass
+fixture_suspect: false
+duration_s: 293.79
+metrics:
+- name: tx_sweep_slope_db_per_db
+  value: 1.0144886711385526
+  units: dB/dB
+  kind: abs
+  bound:
+    type: range
+    lo: 0.95
+    hi: 1.05
+  bound_lo: 0.95
+  bound_hi: 1.05
+  status: pass
+  note: 19 points in fit
+- name: dbfs_at_base_gain
+  value: -52.79006981344031
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 1.0
+  bound_lo: -53.05779003589751
+  bound_hi: -51.05779003589751
+  status: pass
+  baseline:
+    mean: -52.05779003589751
+    std: 0.22368944822877462
+    n: 3
+- name: p1db_tx_gain
+  value: 84.48155168264225
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: 82.222123815837
+  bound_hi: 86.222123815837
+  status: pass
+  baseline:
+    mean: 84.222123815837
+    std: 0.008963013049250446
+    n: 3
+- name: dynamic_range_db
+  value: 74.46435650387832
+  units: dB
+  kind: base
+  bound:
+    type: two_sided
+    tol: 2.0
+  bound_lo: 72.34222838107011
+  bound_hi: 76.34222838107011
+  status: pass
+  baseline:
+    mean: 74.34222838107011
+    std: 0.06459397664066845
+    n: 3
+- name: rx_sweep_slope_db_per_db
+  value: 0.9688247906884212
+  units: dB/dB
+  kind: abs
+  bound:
+    type: range
+    lo: 0.95
+    hi: 1.05
+  bound_lo: 0.95
+  bound_hi: 1.05
+  status: pass
+  note: 7 points in fit
+- name: soc_temp_max_c
+  value: 58.4
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
