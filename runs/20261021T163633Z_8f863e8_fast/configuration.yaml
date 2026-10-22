@@ -1,0 +1,105 @@
+git:
+  sha: 8f863e82d4c8b26fd776251852dc340d8093d003
+  branch: hil-phase4
+  dirty: false
+radar_binary_sha256: 26922ed0b9e6559de3a23398a360c1369078ef97b6113b2330883392a8d44d5a
+libuhd_resolved: /home/englacial/uhd-patched/lib/libuhd.so.4.11.0
+uhd_version: UHD 4.11.0.0-0-c87abfbe
+uhd_build_stamp:
+  source_dir: /home/englacial/uhd
+  commit: c87abfbe8fb96cd1dc9e5d10fcf50d792b60c452
+  dirty: false
+  built_utc: 2026-10-08 20:32:14+00:00
+  uhd_version: UHD 4.11.0.0-0-c87abfbe
+  compiler: /usr/bin/c++ 13.3.0
+  boost_version: '1_90'
+  conda_prefix: /home/englacial/miniforge3/envs/orca
+host:
+  pi_model: Raspberry Pi 5 Model B Rev 1.1
+  kernel: 6.8.0-1065-raspi
+  cpu_governor: ondemand
+  throttled: 0
+  soc_temp_c: 47.95
+  free_disk_gb: 983.1
+  usb_devices:
+  - path: 3-1
+    product_id: '0023'
+    speed_mbps: 5000
+    serial: 36B5C60
+  packages:
+    python: 3.14.7
+    numpy: 2.5.3
+    scipy: 1.18.1
+    xarray: 2026.9.0
+    dask: 2026.8.0
+    zarr: 3.4.0
+    matplotlib: 3.11.2
+    ruamel.yaml: 0.19.1
+    pytest: 9.1.1
+fixture:
+  fixture_id: b206mini_pi5_loopback_50m
+  description: B206mini-i loopback, 30 dB pad at TX, 50 m coax
+  hardware:
+    sdr_model: B206mini-i
+    sdr_serial: 36B5C60
+    attenuator_db: 30
+    cable:
+      type: LMR-100
+      length_m: 50.0
+      velocity_factor: 0.66
+    adapters: []
+  host:
+    model: Raspberry Pi 5
+    data_root: /mnt/nvme/orca-hil
+    results_repo: ~/orca-hil-testing-results
+  uhd:
+    source_dir: ~/uhd
+    install_prefix: ~/uhd-patched
+    expected_commit: c87abfbe8fb96cd1dc9e5d10fcf50d792b60c452
+    fpga_image: usrp_b205mini_fpga.bin
+    env:
+      UHD_IMAGES_DIR: ~/uhd-patched/share/uhd/images
+  storage:
+    kept_raw_quota_gb: 100
+    run_retention_days: 60
+  safety:
+    tx_gain_max: 89.8
+    rx_clip_fraction_max: 0.9
+    attenuator_check:
+      tx_gain: 15.0
+      expected_peak_dbfs: -72.1
+      tolerance_db: 6
+  rf_base:
+    freq: 330000000.0
+    tx_gain: 35.0
+    rx_gain: 40.0
+  calibration:
+    tx_power_table: null
+    path_loss_db: null
+tier: fast
+pytest_args:
+- tests/hil
+- --ignore=tests/hil/unit
+- --hil
+- --tier
+- fast
+- -p
+- no:cacheprovider
+sdr:
+  serials_found:
+  - 36B5C60
+  products_found:
+  - B206mini
+  fw_version: '8.0'
+  fpga_version: '7.0'
+  antennas:
+  - TX/RX, RX2
+  - TX/RX
+  frontend_sensors:
+  - ref_locked
+  - temp, rssi, lo_locked
+  - temp, lo_locked
+uhd_checks:
+  conda_libuhd: []
+  apt_libuhd: []
+usb_kernel_errors_1h: []
