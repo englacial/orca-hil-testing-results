@@ -1,0 +1,502 @@
+test_id: t01
+status: pass
+fixture_suspect: false
+duration_s: 71.04
+metrics:
+- name: exit_status_ok
+  case: a_profile
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: start_present
+  case: a_profile
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: a_profile
+  value: 0.0018963968459926141
+  units: fraction
+  kind: abs
+  bound:
+    type: max
+    value: 0.05
+  bound_lo: null
+  bound_hi: 0.05
+  status: pass
+  note: 38 errors in 20038 pulses
+- name: pulses_written_equals_requested
+  case: a_profile
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: file_size_matches
+  case: a_profile
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: config_matches_generated
+  case: a_profile
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: zarr_dims_ok
+  case: a_profile
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_file_type_ok
+  case: a_profile
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+  note: expected error_data_not_included
+- name: leakage_peak_index
+  value: 159.0571877772079
+  units: samples
+  kind: base
+  bound:
+    type: two_sided
+    tol: 0.1
+  bound_lo: 158.95022979963338
+  bound_hi: 159.15022979963337
+  status: pass
+  baseline:
+    mean: 159.05022979963337
+    std: 0.00703054597626259
+    n: 5
+- name: peak_separation_samples
+  value: 14.210958597041667
+  units: samples
+  kind: abs
+  bound:
+    type: range_about
+    center: 14.15120403870948
+    tol: 1.5
+  bound_lo: 12.65120403870948
+  bound_hi: 15.65120403870948
+  status: pass
+- name: peak_separation_samples
+  value: 14.210958597041667
+  units: samples
+  kind: base
+  bound:
+    type: two_sided
+    tol: 0.1
+  bound_lo: 14.117937359250329
+  bound_hi: 14.317937359250328
+  status: pass
+  baseline:
+    mean: 14.217937359250328
+    std: 0.007589664812998708
+    n: 5
+- name: loopback_peak_power_dbfs
+  value: -52.070966432090486
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 1.0
+  bound_lo: -53.13919714677091
+  bound_hi: -51.13919714677091
+  status: pass
+  baseline:
+    mean: -52.13919714677091
+    std: 0.13358257021418743
+    n: 5
+- name: loopback_to_leakage_ratio_db
+  value: 15.975337216532031
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: single_pulse_snr_db
+  value: 26.458259383134227
+  units: dB
+  kind: base
+  bound:
+    type: lower
+    tol: 2.0
+  bound_lo: 24.414298056112138
+  bound_hi: null
+  status: pass
+  baseline:
+    mean: 26.414298056112138
+    std: 0.09888493214627307
+    n: 5
+- name: mainlobe_3db_width_samples
+  value: 4.864245506691219
+  units: samples
+  kind: abs
+  bound:
+    type: range_about
+    center: 4.8297998070717085
+    rel_tol: 0.1
+  bound_lo: 4.346819826364538
+  bound_hi: 5.312779787778879
+  status: pass
+- name: model_residual_ratio_db
+  value: -38.52203665123411
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 3.0
+  bound_lo: null
+  bound_hi: -35.77973234369077
+  status: pass
+  baseline:
+    mean: -38.77973234369077
+    std: 0.15677269448440428
+    n: 5
+- name: noise_floor_dbfs
+  value: -78.55059811905916
+  units: dBFS
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: -76.574932111767
+  status: pass
+  baseline:
+    mean: -78.574932111767
+    std: 0.09845620948237749
+    n: 5
+- name: raw_max_abs_fs
+  value: 0.009392562322318554
+  units: FS
+  kind: abs
+  bound:
+    type: max
+    value: 0.5
+  bound_lo: null
+  bound_hi: 0.5
+  status: pass
+- name: exit_status_ok
+  case: b_runpy
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: start_present
+  case: b_runpy
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: b_runpy
+  value: 0.01941557168072171
+  units: fraction
+  kind: abs
+  bound:
+    type: max
+    value: 0.05
+  bound_lo: null
+  bound_hi: 0.05
+  status: pass
+  note: 99 errors in 5099 pulses
+- name: pulses_written_equals_requested
+  case: b_runpy
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: file_size_matches
+  case: b_runpy
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: config_matches_generated
+  case: b_runpy
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: zarr_dims_ok
+  case: b_runpy
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_file_type_ok
+  case: b_runpy
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+  note: expected error_data_not_included
+- name: radar_binary_changed_by_runpy
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: exit_status_ok
+  case: c_sigint
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: sigint_exit_within_10s
+  case: c_sigint
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+  note: exited 0.3 s after SIGINT
+- name: records_positive
+  case: c_sigint
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: file_size_multiple_of_record
+  case: c_sigint
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: rx_summary_present
+  case: c_sigint
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: exit_status_ok
+  case: d_split
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: start_present
+  case: d_split
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: d_split
+  value: 0.002344490447448496
+  units: fraction
+  kind: abs
+  bound:
+    type: max
+    value: 0.05
+  bound_lo: null
+  bound_hi: 0.05
+  status: pass
+  note: 47 errors in 20047 pulses
+- name: pulses_written_equals_requested
+  case: d_split
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: file_size_matches
+  case: d_split
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: config_matches_generated
+  case: d_split
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: zarr_dims_ok
+  case: d_split
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_file_type_ok
+  case: d_split
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+  note: expected error_data_not_included
+- name: close_file_count_matches_parts
+  case: d_split
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+  note: 5 [CLOSE FILE] lines, 5 part files
+- name: merged_matches_parts
+  case: d_split
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: soc_temp_max_c
+  value: 56.2
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

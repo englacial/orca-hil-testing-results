@@ -1,0 +1,126 @@
+test_id: t04
+status: pass
+fixture_suspect: false
+duration_s: 34.42
+metrics:
+- name: lo_leakage_rel_chirp_db
+  case: a
+  value: -51.11104257139039
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: spur_freqs_match
+  case: a
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+  note: 0 baseline spurs not found
+- name: new_spurs_above_baseline
+  case: a
+  value: 0
+  units: count
+  kind: abs
+  bound:
+    type: equals
+    value: 0
+  bound_lo: null
+  bound_hi: null
+  status: pass
+  note: 0 new, 0 raised by more than 6 dB
+- name: post_chirp_dc_rel_chirp_db
+  case: a
+  value: -45.60605563170623
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: post_chirp_dc_rel_chirp_db
+  case: b
+  value: -43.976140651458834
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: post_chirp_dc_rel_chirp_db
+  case: c
+  value: -71.81652772318778
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: lo_leakage_dithered_rel_chirp_db
+  case: b
+  value: -64.18412053803162
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: -50.0
+  bound_lo: null
+  bound_hi: -50.0
+  status: pass
+  note: estimate's noise floor -60.2 dB
+- name: lo_leakage_suppression_by_dither_db
+  value: 3.1076118828375385
+  units: dB
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: "lower bound: dithered case at the estimate's noise floor (-60.2 dB rel. chirp)"
+- name: occupied_bw_ratio
+  case: c
+  value: 0.9957805907172996
+  units: ratio
+  kind: abs
+  bound:
+    type: range
+    lo: 0.95
+    hi: 1.05
+  bound_lo: 0.95
+  bound_hi: 1.05
+  status: pass
+  note: ratio to the ideal received chirps' -10 dB bandwidth
+- name: center_offset_error_mhz
+  case: c
+  value: 0.02734375
+  units: MHz
+  kind: abs
+  bound:
+    type: max
+    value: 0.5
+  bound_lo: null
+  bound_hi: 0.5
+  status: pass
+- name: soc_temp_max_c
+  value: 50.7
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info

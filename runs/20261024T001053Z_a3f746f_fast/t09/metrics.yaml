@@ -1,0 +1,130 @@
+test_id: t09
+status: pass
+fixture_suspect: false
+duration_s: 41.33
+metrics:
+- name: error_rate
+  case: duty_50
+  value: 0.0054105665181413114
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 272 errors (0 not late-command) in 50272 pulses
+- name: records_written_equals_requested
+  case: duty_50
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_75
+  value: 0.009312462849217357
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 470 errors (0 not late-command) in 50470 pulses
+- name: records_written_equals_requested
+  case: duty_75
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate
+  case: duty_90
+  value: 0.05706634481197903
+  units: fraction
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+  note: 3026 errors (0 not late-command) in 53026 pulses
+- name: records_written_equals_requested
+  case: duty_90
+  value: true
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: true
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: process_killed
+  value: false
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: false
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: error_rate_at_50pct
+  value: 0.0054105665181413114
+  units: fraction
+  kind: abs
+  bound:
+    type: max
+    value: 0.05
+  bound_lo: null
+  bound_hi: 0.05
+  status: pass
+  note: measured at duty 0.500
+- name: error_rate_at_75pct
+  value: 0.009312462849217357
+  units: fraction
+  kind: base
+  bound:
+    type: upper
+    tol: 0.02
+  bound_lo: null
+  bound_hi: 0.026979076446702804
+  status: pass
+  baseline:
+    mean: 0.006979076446702803
+    std: 0.0021771973567645737
+    n: 5
+  note: measured at duty 0.750
+- name: throttled_during_sweep
+  value: false
+  units: bool
+  kind: abs
+  bound:
+    type: equals
+    value: false
+  bound_lo: null
+  bound_hi: null
+  status: pass
+- name: soc_temp_max_c
+  value: 51.8
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
