@@ -1,0 +1,245 @@
+test_id: t05
+status: pass
+fixture_suspect: false
+duration_s: 1789.72
+metrics:
+- name: plateau_level_dbfs
+  case: default
+  value: -94.1793441772461
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 3.0
+  bound_lo: -97.1350606282552
+  bound_hi: -91.1350606282552
+  status: pass
+  baseline:
+    mean: -94.1350606282552
+    std: 0.026927177463928965
+    n: 3
+- name: plateau_onset_n
+  case: default
+  value: 30.0
+  units: pulses
+  kind: base
+  bound:
+    type: factor_two_sided
+    factor: 3
+  bound_lo: 10.0
+  bound_hi: 90.0
+  status: pass
+  baseline:
+    mean: 30.0
+    std: 0.0
+    n: 3
+- name: dc_chirp_slope_db_per_decade
+  case: dither
+  value: -7.345685890391685
+  units: dB/decade
+  kind: base
+  bound:
+    type: two_sided
+    tol: 1.0
+  bound_lo: -8.035963038952147
+  bound_hi: -6.035963038952147
+  status: pass
+  baseline:
+    mean: -7.035963038952147
+    std: 0.1388768931329414
+    n: 3
+- name: dc_chirp_deviation_from_theory_at_nmax_db
+  case: dither
+  value: 12.082923889160156
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: 15.25379395119411
+  status: pass
+  baseline:
+    mean: 13.162798563639322
+    std: 0.5227488468886968
+    n: 3
+- name: signal_peak_loss_at_nmax_db
+  case: dither
+  value: 0.0005750224064229315
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: slope_db_per_decade
+  case: lo_offset_dither
+  value: -10.04607127722636
+  units: dB/decade
+  kind: abs
+  bound:
+    type: range
+    lo: -11.0
+    hi: -9.0
+  bound_lo: -11.0
+  bound_hi: -9.0
+  status: pass
+- name: deviation_from_theory_at_nmax_db
+  case: lo_offset_dither
+  value: -0.260528564453125
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 3.0
+  bound_lo: null
+  bound_hi: 3.0
+  status: pass
+- name: signal_peak_loss_at_nmax_db
+  case: lo_offset_dither
+  value: 0.0002735031518952269
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: dither_gain_at_nmax_db
+  value: 22.137474060058594
+  units: dB
+  kind: base
+  bound:
+    type: lower
+    tol: 3.0
+  bound_lo: 18.10314432779948
+  bound_hi: null
+  status: pass
+  baseline:
+    mean: 21.10314432779948
+    std: 0.5803323776809532
+    n: 3
+- name: plateau_level_dbfs
+  case: default_p10
+  value: -94.47752380371094
+  units: dBFS
+  kind: base
+  bound:
+    type: two_sided
+    tol: 3.0
+  bound_lo: -97.79463195800781
+  bound_hi: -91.79463195800781
+  status: pass
+  baseline:
+    mean: -94.79463195800781
+    std: 0.4991682767631037
+    n: 3
+- name: plateau_onset_n
+  case: default_p10
+  value: 30.0
+  units: pulses
+  kind: base
+  bound:
+    type: factor_two_sided
+    factor: 3
+  bound_lo: 10.0
+  bound_hi: 90.0
+  status: pass
+  baseline:
+    mean: 30.0
+    std: 0.0
+    n: 3
+- name: dc_chirp_slope_db_per_decade
+  case: dither_p10
+  value: -4.171849340617442
+  units: dB/decade
+  kind: base
+  bound:
+    type: two_sided
+    tol: 1.0
+  bound_lo: -5.073910847979868
+  bound_hi: -3.0739108479798682
+  status: pass
+  baseline:
+    mean: -4.073910847979868
+    std: 0.14108252469005408
+    n: 3
+- name: dc_chirp_deviation_from_theory_at_nmax_db
+  case: dither_p10
+  value: 22.895614624023438
+  units: dB
+  kind: base
+  bound:
+    type: upper
+    tol: 2.0
+  bound_lo: null
+  bound_hi: 25.22948710123698
+  status: pass
+  baseline:
+    mean: 23.22948710123698
+    std: 0.48383716468411386
+    n: 3
+- name: signal_peak_loss_at_nmax_db
+  case: dither_p10
+  value: 4.6987079834082124e-05
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: slope_db_per_decade
+  case: lo_offset_dither_p10
+  value: -9.997320430789618
+  units: dB/decade
+  kind: abs
+  bound:
+    type: range
+    lo: -11.0
+    hi: -9.0
+  bound_lo: -11.0
+  bound_hi: -9.0
+  status: pass
+- name: deviation_from_theory_at_nmax_db
+  case: lo_offset_dither_p10
+  value: 0.201171875
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 3.0
+  bound_lo: null
+  bound_hi: 3.0
+  status: pass
+- name: signal_peak_loss_at_nmax_db
+  case: lo_offset_dither_p10
+  value: 3.9595724842911295e-05
+  units: dB
+  kind: abs
+  bound:
+    type: max
+    value: 0.2
+  bound_lo: null
+  bound_hi: 0.2
+  status: pass
+- name: soc_temp_max_c
+  value: 67.2
+  units: degC
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
+- name: throttled_during_test
+  value: false
+  units: bool
+  kind: info
+  bound: {}
+  bound_lo: null
+  bound_hi: null
+  status: info
